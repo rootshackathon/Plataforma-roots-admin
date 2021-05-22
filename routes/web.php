@@ -17,6 +17,11 @@ Auth::routes();
 // auth
 Route::group(['middleware' => ['auth'], "namespace" => "Admin"], function () {
     
+    Route::group(['prefix' => '/'], function () {
+        Route::get('/', ['uses' => 'HomeController@index']);
+        Route::get('/home', ['uses' => 'HomeController@index']);
+    });
+
     Route::group(['prefix' => '/regiao'], function () {
         Route::get('/', ['uses' => 'RegiaoController@index']);
         Route::get('/criar', ['uses' => 'RegiaoController@criar']);
