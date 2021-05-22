@@ -13,8 +13,7 @@ class HomeController extends Controller
 
     public function Index()
     {
-        dd("Home");
-        //return view('admin.home.index');
+        return view('admin.home.index');
     }
 
 }
