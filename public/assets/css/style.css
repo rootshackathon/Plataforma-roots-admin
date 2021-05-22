@@ -1,0 +1,63 @@
+.page {
+    min-height: 360px;
+}
+
+.text-color-white {
+    color: #ffffff !important;
+}
+
+.header-default {
+    background-image: linear-gradient(to right bottom, #018e68, #01926b, #01966d, #029a70, #029e73, #02a276, #02a578, #02a97b, #02ae7e, #01b282, #01b785, #00bc89) !important;
+}
+
+.navbar-default {
+    background-image: linear-gradient(to right bottom, #018e68, #01926b, #01966d, #029a70, #029e73, #02a276, #02a578, #02a97b, #02ae7e, #01b282, #01b785, #00bc89) !important;
+    border-color: #e7e7e7;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff !important;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #f2f2f2 !important;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #f2f2f2 !important;
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.logo-nav {
+    vertical-align: middle;
+    width: 110px;
+    height: 40px;
+}
+
+.btn-info{
+    background-image: linear-gradient(to right bottom, #018e68, #01926b, #01966d, #029a70, #029e73, #02a276, #02a578, #02a97b, #02ae7e, #01b282, #01b785, #00bc89) !important;
+    background-color: #01926b;
+    border-color: #01926b;
+    color: #ffffff;
+}
+
+.bg-info {
+    background-image: linear-gradient(to right bottom, #018e68, #01926b, #01966d, #029a70, #029e73, #02a276, #02a578, #02a97b, #02ae7e, #01b282, #01b785, #00bc89) !important;
+    background-color: #01926b;
+    border-color: #01926b;
+    color: #ffffff;
+}
+
+#map {
+    height: 100% !important;
+    position: unset !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
