@@ -30,5 +30,12 @@ Route::group(['middleware' => ['auth'], "namespace" => "Admin"], function () {
         Route::get('/mostrar/{codigo}', ['uses' => 'EspecieController@mostrar']);
         Route::post('/gravar', ['uses' => 'EspecieController@gravar']);
     });
+
+    Route::group(['prefix' => '/arvores'], function () {
+        Route::get('/', ['uses' => 'ArvoreController@index']);
+        Route::get('/criar', ['uses' => 'ArvoreController@criar']);
+        Route::get('/mostrar/{codigo}', ['uses' => 'ArvoreController@mostrar']);
+        Route::post('/gravar', ['uses' => 'ArvoreController@gravar']);
+    });
     
 });
