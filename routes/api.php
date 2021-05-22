@@ -17,6 +17,10 @@ Route::group(['middleware' => 'api', "namespace" => "Api"], function() {
         Route::post('/', 'LoginController@login');
     });
 
+    Route::group(['prefix' => '/especie'], function() {
+        Route::get('/', 'EspecieController@index');
+    });
+
     Route::group(['prefix' => '/arvore'], function() {
         Route::get('/', 'ArvoreController@index');
         Route::get('/{codigo}', 'ArvoreController@mostrar');
