@@ -25,6 +25,14 @@ Route::group(['middleware' => 'api', "namespace" => "Api"], function() {
         Route::get('/', 'ArvoreController@index');
         Route::get('/{codigo}', 'ArvoreController@mostrar');
         Route::post('/', 'ArvoreController@gravar');
+
+        Route::group(['prefix' => '/tipoSituacaoArvore'], function() {
+            Route::get('/', 'TipoSituacaoArvoreController@index');
+        });
+    
+        Route::group(['prefix' => '/situacaoArvore'], function() {
+            Route::post('/', 'SituacaoArvoreController@gravar');
+        });
     });
 
 });

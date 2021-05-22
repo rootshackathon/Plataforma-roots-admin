@@ -134,4 +134,51 @@ class Util
         return $dados;
     }
 
+    public static function ListaStatusManutencao()
+    {
+        //1 - "Solicitado" 
+        //2 - "Em andamento"
+        //3 - "Concluído"
+        //4 - "Parado"
+        //5 - "Cancelado" 
+        
+        $lista = [
+            ["codigo" => 1, "descricao" => "Solicitado"],
+            ["codigo" => 2, "descricao" => "Em andamento"],
+            ["codigo" => 3, "descricao" => "Concluído"],
+            ["codigo" => 4, "descricao" => "Parado"],
+            ["codigo" => 5, "descricao" => "Cancelado"]
+        ];
+
+        return $lista;
+    }
+
+    public static function StatusLabelManutencao($codigo)
+    {
+        $retorno = "";
+
+        switch ($codigo)
+        {
+            case 1:
+                $retorno = '<span class="badge badge-primary">Solicitado</span>';
+                break;
+            case 2:
+                $retorno = '<span class="badge badge-warning">Em andamento</span>';
+                break;
+            case 3:
+                $retorno = '<span class="badge badge-success">Concluído</span>';
+                break;
+            case 4:
+                $retorno = '<span class="badge badge-secondary">Parado</span>';
+                break;
+            case 5:
+                $retorno = '<span class="badge badge-danger">Cancelado</span>';
+                break;        
+            default:
+                break;
+        }
+
+        return $retorno;
+    }
+
 }
