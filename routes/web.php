@@ -22,6 +22,10 @@ Route::group(['middleware' => ['auth'], "namespace" => "Admin"], function () {
         Route::get('/home', ['uses' => 'HomeController@index']);
     });
 
+    Route::group(['prefix' => '/monitoramento'], function () {
+        Route::get('/', ['uses' => 'MonitoramentoController@index']);
+    });
+
     Route::group(['prefix' => '/tipoManutencao'], function () {
         Route::get('/', ['uses' => 'TipoManutencaoController@index']);
         Route::get('/criar', ['uses' => 'TipoManutencaoController@criar']);
