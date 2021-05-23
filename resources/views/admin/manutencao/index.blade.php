@@ -82,8 +82,8 @@
                                             {!! \App\Helpers\Util::StatusLabelManutencao($item->status_manutencao)  !!}
                                         </td>
                                         <td class="text-center">
-                                            <a href="/monitoramento?lat={{$item->arvore->latitude}}&lng={{$item->arvore->longitude}}" class="text-info" target="_blank">
-                                                <i class="fas fa-map-marker-alt"></i>
+                                            <a href="/monitoramento?codigo={{$item->arvore->codigo}}&lat={{$item->arvore->latitude}}&lng={{$item->arvore->longitude}}" class="text-info" target="_blank">
+                                                <i class="fas fa-map-marker-alt fw-f2x"></i>
                                             </a>
                                         </td>
                                         <td class="text-center">
