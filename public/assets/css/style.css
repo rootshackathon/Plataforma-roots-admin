@@ -6,6 +6,10 @@
     color: #ffffff !important;
 }
 
+.header-default-z{
+    z-index: 999999 !important;
+}
+
 .header-default {
     background-image: linear-gradient(to right bottom, #018e68, #01926b, #01966d, #029a70, #029e73, #02a276, #02a578, #02a97b, #02ae7e, #01b282, #01b785, #00bc89) !important;
 }

@@ -14,5 +14,6 @@
       src="https://maps.googleapis.com/maps/api/js?key={{env('API_KEY_GOOGLE')}}&callback=initMap&libraries=&v=weekly"
       async
     ></script>
+    <script src="/assets/js/maps.js?"></script>
 
 @endsection

@@ -14,7 +14,7 @@
     <title>Roots - Admin</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light header-default mb-3">
+    <nav class="navbar navbar-expand-lg navbar-light header-default header-default-z mb-3">
         
         <a class="navbar-brand" href="/">
           <img class="logo-nav" src="/assets/imagens/logo.png" title="Roots">
