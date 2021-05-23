@@ -52,4 +52,12 @@ class LoginController extends Controller
         return redirect($this->redirectTo);
 
     }
+
+    public function logout(Request $request) {
+        
+        Auth::logout();
+        $request->session()->flush();
+        return redirect($this->redirectTo);
+    
+    }
 }
