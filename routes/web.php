@@ -29,6 +29,13 @@ Route::group(['middleware' => ['auth'], "namespace" => "Admin"], function () {
         Route::post('/gravar', ['uses' => 'TipoManutencaoController@gravar']);
     });
 
+    Route::group(['prefix' => '/manutencao'], function () {
+        Route::get('/', ['uses' => 'ManutencaoController@index']);
+        Route::get('/criar', ['uses' => 'ManutencaoController@criar']);
+        Route::get('/mostrar/{codigo}', ['uses' => 'ManutencaoController@mostrar']);
+        Route::post('/gravar', ['uses' => 'ManutencaoController@gravar']);
+    });
+
     Route::group(['prefix' => '/regiao'], function () {
         Route::get('/', ['uses' => 'RegiaoController@index']);
         Route::get('/criar', ['uses' => 'RegiaoController@criar']);
